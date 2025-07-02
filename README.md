@@ -21,18 +21,6 @@ python --version
 # or
 python3 --version
 ```
-
----
-
-## 📁 Set Up the Project Folder
-
-1. Place your entire project folder (including `app.py`, `templates/`, `setup.sh`, etc.) in a convenient location.
-2. Open a terminal and navigate into the project folder:
-
-```bash
-cd path/to/cyber
-```
-
 ---
 
 ## ⚙️ Run the Setup Script
