@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Password Manager</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI";
+        background: linear-gradient(to right, #667eea, #764ba2);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        background: white;
+        padding: 30px 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 700px;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      a {
+        color: #667eea;
+        text-decoration: none;
+        text-align: center;
+        margin-right: 5px;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .flash {
+        color: red;
+        margin-bottom: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 8px;
+        border-bottom: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Passwords</h1>
+      <p>
+        <a href="{{ url_for('add') }}">Add</a>
+        <a href="{{ url_for('generate') }}">Generate</a>
+        <a href="{{ url_for('logout') }}">Logout</a>
+      </p>
+      <div class="flash">
+        {{ get_flashed_messages() | join('<br />')  }}
+      </div>
+      {% if entries %}
+      <table>
+        <tr>
+          <th>Site</th>
+          <th>Username</th>
+          <th>Password</th>
+        </tr>
+        {% for entry in entries %}
+        <tr>
+          <td>{{ entry.site}}</td>
+          <td>{{ entry.username}}</td>
+          <td>{{ entry.password}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+      {% else %}
+      <p>No passwords stored.</p>
+      {% endif %}
+    </div>
+  </body>
+</html>
