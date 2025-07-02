@@ -14,6 +14,16 @@ git clone https://github.com/StepashaxGod/cyber.git
 cd path/to/cyber
 code .
 ```
+go to cyber
+
+```bash
+cd path/to/cyber
+```
+open it
+```bash
+code .
+```
+
 
 Make sure you have **Python 3** installed:
 
