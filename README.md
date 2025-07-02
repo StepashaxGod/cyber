@@ -11,8 +11,6 @@ clone repo and navigate to a file
 
 ```bash
 git clone https://github.com/StepashaxGod/cyber.git
-cd path/to/cyber
-code .
 ```
 go to cyber
 
