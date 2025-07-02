@@ -7,6 +7,13 @@ Follow these steps to get the Cyber project up and running on your machine.
 
 ## ✅ Requirements
 
+clone repo and navigate to a file
+
+```bash
+https://github.com/StepashaxGod/cyber.git
+cd path/to/cyber
+```
+
 Make sure you have **Python 3** installed:
 
 ```bash
