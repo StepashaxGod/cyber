@@ -87,7 +87,7 @@ To inspect the SQLite database:
 1. Download **DB Browser for SQLite**:  
    [https://sqlitebrowser.org/](https://sqlitebrowser.org/)
 
-2. In the browser, open the file:
+open the file in /cyber
 
 ```
 open instance/passwords.db
