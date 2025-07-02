@@ -6,11 +6,11 @@ Follow these steps to get the Cyber project up and running on your machine.
 ---
 
 ## ✅ Requirements
-
+through terminal
 clone repo and navigate to a file
 
 ```bash
-https://github.com/StepashaxGod/cyber.git
+git clone https://github.com/StepashaxGod/cyber.git
 cd path/to/cyber
 ```
 
@@ -79,7 +79,8 @@ http://127.0.0.1:5000
 
 ---
 
-## 📊 Visualize the Database (Optional)
+## 📊 Visualize the Database (Optional) 
+Presents in video for the sake of clarity.
 
 To inspect the SQLite database:
 
@@ -89,11 +90,7 @@ To inspect the SQLite database:
 2. In the browser, open the file:
 
 ```
-instance/passwords.db
+open instance/passwords.db
 ```
-
-Here you can view tables, data, and structure visually.
-
----
 
 Enjoy your secure password manager! 🔐
